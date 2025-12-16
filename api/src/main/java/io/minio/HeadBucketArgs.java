@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 MinIO, Inc.
+ * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2025 MinIO, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,19 +16,12 @@
 
 package io.minio;
 
-/** Arguments of {@link MinioAsyncClient#getObject} and {@link MinioClient#getObject}. */
-public class GetObjectArgs extends ObjectConditionalReadArgs {
-  protected GetObjectArgs() {}
-
-  public GetObjectArgs(DownloadObjectArgs args) {
-    super(args);
-  }
-
+/** Arguments of {@link BaseS3Client#headBucket}. */
+public class HeadBucketArgs extends HeadBucketBaseArgs {
   public static Builder builder() {
     return new Builder();
   }
 
-  /** Builder of {@link GetObjectArgs}. */
-  public static final class Builder
-      extends ObjectConditionalReadArgs.Builder<Builder, GetObjectArgs> {}
+  /** Builder of {@link HeadBucketArgs}. */
+  public static final class Builder extends HeadBucketBaseArgs.Builder<Builder, HeadBucketArgs> {}
 }
