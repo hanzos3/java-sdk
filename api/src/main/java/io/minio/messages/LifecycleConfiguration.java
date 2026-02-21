@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -230,7 +230,7 @@ public class LifecycleConfiguration {
     private Boolean expiredObjectDeleteMarker;
 
     @Element(name = "ExpiredObjectAllVersions", required = false)
-    private Boolean expiredObjectAllVersions; // This is MinIO specific extension.
+    private Boolean expiredObjectAllVersions; // This is Hanzo S3 specific extension.
 
     public Expiration(
         @Nullable @Element(name = "Date", required = false) Time.S3Time date,

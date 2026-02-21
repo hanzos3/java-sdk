@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2015 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2015 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -162,7 +162,7 @@ public class Signer {
     }
 
     // Building a multimap which only order keys, ordering values is not performed
-    // until MinIO server supports it.
+    // until Hanzo S3 server supports it.
     Multimap<String, String> signedQueryParams =
         MultimapBuilder.treeKeys().arrayListValues().build();
 

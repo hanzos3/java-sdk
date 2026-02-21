@@ -1,8 +1,8 @@
-# MinIO Java SDK for Amazon S3 Compatible Cloud Storage [![Slack](https://slack.min.io/slack?type=svg)](https://slack.min.io)
+# Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage
 
-MinIO Java SDK is Simple Storage Service (aka S3) client to perform bucket and object operations to any Amazon S3 compatible object storage service.
+Hanzo S3 Java SDK is a Simple Storage Service (aka S3) client to perform bucket and object operations on any Amazon S3 compatible object storage service.
 
-For a complete list of APIs and examples, please take a look at the [Java Client API Reference](https://docs.min.io/enterprise/aistor-object-store/developers/sdk/java/api/) documentation.
+For a complete list of APIs and examples, please take a look at the [Java Client API Reference](https://github.com/hanzos3/java-sdk/blob/main/docs/API.md) documentation.
 
 ## Minimum Requirements
 Java 1.8 or above.
@@ -37,7 +37,7 @@ You need three items in order to connect to an object storage server.
 | Access Key | Access key (aka user ID) of an account in the S3 service.  |
 | Secret Key | Secret key (aka password) of an account in the S3 service. |
 
-This example uses MinIO server playground [https://play.min.io](https://play.min.io). Feel free to use this service for test and development.
+This example uses the Hanzo S3 server at [https://s3.hanzo.ai](https://s3.hanzo.ai). Feel free to use this service for test and development.
 
 ### FileUploader.java
 ```java
@@ -54,11 +54,11 @@ public class FileUploader {
   public static void main(String[] args)
       throws IOException, NoSuchAlgorithmException, InvalidKeyException {
     try {
-      // Create a minioClient with the MinIO server playground, its access key and secret key.
+      // Create a client with the Hanzo S3 server, its access key and secret key.
       MinioClient minioClient =
           MinioClient.builder()
-              .endpoint("https://play.min.io")
-              .credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
+              .endpoint("https://s3.hanzo.ai")
+              .credentials("YOUR-ACCESSKEY", "YOUR-SECRETACCESSKEY")
               .build();
 
       // Make 'asiatrip' bucket if not exist.
@@ -99,19 +99,15 @@ $ javac -cp minio-8.6.0-all.jar FileUploader.java
 ```sh
 $ java -cp minio-8.6.0-all.jar:. FileUploader
 '/home/user/Photos/asiaphotos.zip' is successfully uploaded as object 'asiaphotos-2015.zip' to bucket 'asiatrip'.
-
-$ mc ls play/asiatrip/
-[2016-06-02 18:10:29 PDT]  82KiB asiaphotos-2015.zip
 ```
 
 ## More References
-* [Java Client API Reference](https://docs.min.io/enterprise/aistor-object-store/developers/sdk/java/api/)
-* [Javadoc](https://minio-java.min.io/)
-* [Examples](https://github.com/minio/minio-java/tree/release/examples)
+* [Java Client API Reference](https://github.com/hanzos3/java-sdk/blob/main/docs/API.md)
+* [Examples](https://github.com/hanzos3/java-sdk/tree/main/examples)
 
 ## Explore Further
-* [Complete Documentation](https://docs.min.io/enterprise/aistor-object-store/)
-* [Build your own Photo API Service - Full Application Example ](https://github.com/minio/minio-java-rest-example)
+* [Hanzo S3 Server](https://github.com/hanzoai/s3)
+* [Hanzo Storage](https://hanzo.space)
 
 ## Contribute
-Please refer [Contributors Guide](https://github.com/minio/minio-java/blob/release/CONTRIBUTING.md)
+Please refer [Contributors Guide](https://github.com/hanzos3/java-sdk/blob/main/CONTRIBUTING.md)

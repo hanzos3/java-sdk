@@ -16,7 +16,7 @@ public class GetObjectResume {
   public static void main(String[] args) throws IOException, MinioException {
     MinioClient minioClient =
         MinioClient.builder()
-            .endpoint("https://play.min.io")
+            .endpoint("https://s3.hanzo.ai")
             .credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
             .build();
 

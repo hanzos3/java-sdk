@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2025 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2025 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -286,7 +286,7 @@ public class Utils {
 
   public static String getDefaultUserAgent() {
     return String.format(
-        "MinIO (%s; %s) minio-java/%s",
+        "Hanzo-S3 (%s; %s) minio-java/%s",
         System.getProperty("os.name"),
         System.getProperty("os.arch"),
         MinioProperties.INSTANCE.getVersion());

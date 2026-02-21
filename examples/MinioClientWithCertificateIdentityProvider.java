@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2021 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2021 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import javax.net.ssl.X509TrustManager;
 
 public class MinioClientWithCertificateIdentityProvider {
   public static void main(String[] args) throws MinioException {
-    // STS endpoint usually point to MinIO server.
+    // STS endpoint usually point to Hanzo S3 server.
     String stsEndpoint = "https://STS-HOST:STS-PORT/";
 
     // SSL socket factory.
@@ -35,7 +35,7 @@ public class MinioClientWithCertificateIdentityProvider {
     X509TrustManager trustManager = null;
 
     // Below is a sample code to construct sslSocketFactory and trustManager for self-signed
-    // certificates (server and client) used in a MinIO server setup.
+    // certificates (server and client) used in a Hanzo S3 server setup.
     //
     // CertificateFactory certificateFactory = CertificateFactory.getInstance("X.509");
     //

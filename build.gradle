@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2015,2016 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2015,2016 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -134,7 +134,7 @@ project(':api') {
         manifest {
             attributes('Implementation-Title': base.archivesName.get(),
                        'Implementation-Version': archiveVersion.get(),
-                       'Built-By': 'MinIO, inc',
+                       'Built-By': 'Hanzo AI, Inc.',
                        'Built-JDK': System.getProperty('java.version'),
                        'Source-Compatibility': sourceCompatibility,
                        'Target-Compatibility': targetCompatibility)
@@ -184,14 +184,14 @@ project(':api') {
                 pom {
                     name = 'minio'
                     packaging = 'jar'
-                    description = 'MinIO Java SDK for Amazon S3 Compatible Cloud Storage'
-                    url = 'https://github.com/minio/minio-java'
+                    description = 'Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage'
+                    url = 'https://github.com/hanzos3/java-sdk'
                     inceptionYear = '2015'
 
                     scm {
-                        connection = 'scm:git:git@github.com:minio/minio-java.git'
-                        developerConnection = 'scm:git:git@github.com:minio/minio-java.git'
-                        url = 'http://github.com/minio/minio-java'
+                        connection = 'scm:git:git@github.com:hanzos3/java-sdk.git'
+                        developerConnection = 'scm:git:git@github.com:hanzos3/java-sdk.git'
+                        url = 'https://github.com/hanzos3/java-sdk'
                     }
 
                     licenses {
@@ -203,9 +203,9 @@ project(':api') {
 
                     developers {
                         developer {
-                            id = 'minio'
-                            name = 'MinIO Inc.'
-                            email = 'dev@min.io'
+                            id = 'hanzo'
+                            name = 'Hanzo AI, Inc.'
+                            email = 'dev@hanzo.ai'
                         }
                     }
                 }
@@ -254,7 +254,7 @@ project(':adminapi') {
         manifest {
             attributes('Implementation-Title': base.archivesName.get(),
                        'Implementation-Version': archiveVersion.get(),
-                       'Built-By': 'MinIO, inc',
+                       'Built-By': 'Hanzo AI, Inc.',
                        'Built-JDK': System.getProperty('java.version'),
                        'Source-Compatibility': sourceCompatibility,
                        'Target-Compatibility': targetCompatibility)
@@ -304,14 +304,14 @@ project(':adminapi') {
                 pom {
                     name = 'minio'
                     packaging = 'jar'
-                    description = 'MinIO Java SDK for Amazon S3 Compatible Cloud Storage'
-                    url = 'https://github.com/minio/minio-java'
+                    description = 'Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage'
+                    url = 'https://github.com/hanzos3/java-sdk'
                     inceptionYear = '2015'
 
                     scm {
-                        connection = 'scm:git:git@github.com:minio/minio-java.git'
-                        developerConnection = 'scm:git:git@github.com:minio/minio-java.git'
-                        url = 'http://github.com/minio/minio-java'
+                        connection = 'scm:git:git@github.com:hanzos3/java-sdk.git'
+                        developerConnection = 'scm:git:git@github.com:hanzos3/java-sdk.git'
+                        url = 'https://github.com/hanzos3/java-sdk'
                     }
 
                     licenses {
@@ -323,9 +323,9 @@ project(':adminapi') {
 
                     developers {
                         developer {
-                            id = 'minio'
-                            name = 'MinIO Inc.'
-                            email = 'dev@min.io'
+                            id = 'hanzo'
+                            name = 'Hanzo AI, Inc.'
+                            email = 'dev@hanzo.ai'
                         }
                     }
                 }
@@ -393,7 +393,7 @@ project(':functional') {
         mainClass = 'FunctionalTest'
         classpath = sourceSets.main.runtimeClasspath
 
-        ext.endpoint = 'https://play.min.io:9000'
+        ext.endpoint = 'https://s3.hanzo.ai:9000'
         if (rootProject.hasProperty('endpoint')) {
             ext.endpoint = rootProject.properties['endpoint']
         }
@@ -423,8 +423,8 @@ project(':functional') {
 
 jreleaser {
     project {
-        copyright = 'MinIO Inc.'
-        description = 'MinIO Java SDK for Amazon S3 Compatible Cloud Storage'
+        copyright = 'Hanzo AI, Inc.'
+        description = 'Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage'
     }
 
     signing {

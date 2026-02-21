@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ public class ListObjectsArgs extends BucketArgs {
   private String continuationToken; // only for ListObjectsV2.
   private boolean fetchOwner; // only for ListObjectsV2.
   private String versionIdMarker; // only for GetObjectVersions.
-  private boolean includeUserMetadata; // MinIO extension applicable to ListObjectsV2.
+  private boolean includeUserMetadata; // Hanzo S3 extension applicable to ListObjectsV2.
   private boolean recursive;
   private boolean useApiVersion1;
   private boolean includeVersions;

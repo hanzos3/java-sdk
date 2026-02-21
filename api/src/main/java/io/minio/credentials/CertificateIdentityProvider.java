@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2021 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2021 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ import org.simpleframework.xml.Root;
 
 /**
  * Credential provider using <a
- * href="https://github.com/minio/minio/blob/master/docs/sts/tls.md">AssumeRoleWithCertificate
+ * href="https://github.com/hanzoai/s3/blob/master/docs/sts/tls.md">AssumeRoleWithCertificate
  * API</a>.
  */
 public class CertificateIdentityProvider extends BaseIdentityProvider {
@@ -80,7 +80,7 @@ public class CertificateIdentityProvider extends BaseIdentityProvider {
 
   /**
    * Response XML of <a
-   * href="https://github.com/minio/minio/blob/master/docs/sts/tls.md">AssumeRoleWithCertificate
+   * href="https://github.com/hanzoai/s3/blob/master/docs/sts/tls.md">AssumeRoleWithCertificate
    * API</a>.
    */
   @Root(name = "AssumeRoleWithCertificateResponse", strict = false)

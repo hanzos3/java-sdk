@@ -1,6 +1,6 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage,
- * (C) 2022 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage,
+ * (C) 2022 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ import java.util.Map;
  * InfoMessage container to hold server admin related information.
  *
  * @see <a href=
- *     "https://github.com/minio/madmin-go/blob/main/info-commands.go#L238">heal-commands.go</a>
+ *     "https://github.com/hanzoai/s3-admin-go/blob/main/info-commands.go#L238">heal-commands.go</a>
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GetServerInfoResponse {

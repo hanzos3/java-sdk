@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,10 +30,10 @@ import okhttp3.Response;
 public class GetPresignedPostFormData {
   /** MinioClient.presignedPostPolicy() example. */
   public static void main(String[] args) throws IOException, MinioException {
-    /* play.min.io for test and development. */
+    /* s3.hanzo.ai for test and development. */
     MinioClient minioClient =
         MinioClient.builder()
-            .endpoint("https://play.min.io")
+            .endpoint("https://s3.hanzo.ai")
             .credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
             .build();
 
@@ -73,7 +73,7 @@ public class GetPresignedPostFormData {
 
     Request request =
         new Request.Builder()
-            .url("https://play.min.io/my-bucket")
+            .url("https://s3.hanzo.ai/my-bucket")
             .post(multipartBuilder.build())
             .build();
     OkHttpClient httpClient = new OkHttpClient().newBuilder().build();
@@ -90,6 +90,6 @@ public class GetPresignedPostFormData {
       System.out.print(" -F " + entry.getKey() + "=" + entry.getValue());
     }
     System.out.print(" -F key=my-object -F Content-Type=image/jpg");
-    System.out.println(" -F file=@/tmp/userpic.jpg https://play.min.io/my-bucket");
+    System.out.println(" -F file=@/tmp/userpic.jpg https://s3.hanzo.ai/my-bucket");
   }
 }

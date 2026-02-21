@@ -1,6 +1,6 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage,
- * (C) 2021 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage,
+ * (C) 2021 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ import org.bouncycastle.crypto.params.Argon2Parameters;
 import org.bouncycastle.crypto.params.KeyParameter;
 
 /**
- * Cryptography to read and write encrypted MinIO Admin payload.
+ * Cryptography to read and write encrypted Hanzo S3 Admin payload.
  *
  * <pre>
  * Encrypted Message Format:

@@ -1,6 +1,6 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage,
- * (C) 2020 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage,
+ * (C) 2020 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -175,7 +175,7 @@ public class NotificationRecords {
       @JsonProperty private String eTag;
       @JsonProperty private String versionId;
       @JsonProperty private String sequencer;
-      @JsonProperty private Map<String, String> userMetadata; // MinIO specific extension.
+      @JsonProperty private Map<String, String> userMetadata; // Hanzo S3 specific extension.
 
       public String key() {
         return key;
@@ -246,7 +246,7 @@ public class NotificationRecords {
     }
 
     /** Source information of {@link Event}. */
-    /** This is MinIO extension. */
+    /** This is Hanzo S3 extension. */
     @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(
         value = "UwF",
         justification = "Everything in this class is initialized by JSON unmarshalling.")

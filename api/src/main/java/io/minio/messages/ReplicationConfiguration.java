@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -46,7 +46,7 @@ public class ReplicationConfiguration {
   public ReplicationConfiguration(
       @Nullable @Element(name = "Role", required = false) String role,
       @Nonnull @ElementList(name = "Rule", inline = true) List<Rule> rules) {
-    this.role = role; // Role is not applicable in MinIO server and it is optional.
+    this.role = role; // Role is not applicable in Hanzo S3 server and it is optional.
 
     this.rules = Utils.unmodifiableList(Objects.requireNonNull(rules, "Rules must not be null"));
     if (rules.isEmpty()) {
@@ -104,7 +104,7 @@ public class ReplicationConfiguration {
     private SourceSelectionCriteria sourceSelectionCriteria;
 
     @Element(name = "DeleteReplication", required = false)
-    private DeleteReplication deleteReplication; // This is MinIO specific extension.
+    private DeleteReplication deleteReplication; // This is Hanzo S3 specific extension.
 
     public Rule(
         @Nonnull @Element(name = "Status") Status status,
@@ -532,7 +532,7 @@ public class ReplicationConfiguration {
     }
   }
 
-  /** Delete replication (MinIO extension) information of {@link ReplicationConfiguration.Rule}. */
+  /** Delete replication (Hanzo S3 extension) information of {@link ReplicationConfiguration.Rule}. */
   @Root(name = "DeleteReplication")
   public static class DeleteReplication {
     @Element(name = "Status", required = false)

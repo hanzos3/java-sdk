@@ -1,6 +1,6 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage,
- * (C) 2021 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage,
+ * (C) 2021 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * service account info.
  *
  * <p>* @see <a href=
- * "https://github.com/minio/madmin-go/blob/main/user-commands.go#L535">user-commands.go</a>
+ * "https://github.com/hanzoai/s3-admin-go/blob/main/user-commands.go#L535">user-commands.go</a>
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GetServiceAccountInfoResponse {

@@ -1,6 +1,6 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage,
- * (C) 2015, 2016, 2017 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage,
+ * (C) 2015, 2016, 2017 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@ public class MinioClientTest {
 
   @Test(expected = IllegalArgumentException.class)
   public void testEndpoint2() throws MinioException {
-    MinioClient.builder().endpoint("http://play.min.io/mybucket").build();
+    MinioClient.builder().endpoint("http://s3.hanzo.ai/mybucket").build();
     Assert.fail("exception should be thrown");
   }
 
@@ -80,13 +80,13 @@ public class MinioClientTest {
 
   @Test(expected = IllegalArgumentException.class)
   public void testPort1() throws MinioException {
-    MinioClient.builder().endpoint("play.min.io", 0, false).build();
+    MinioClient.builder().endpoint("s3.hanzo.ai", 0, false).build();
     Assert.fail("exception should be thrown");
   }
 
   @Test(expected = IllegalArgumentException.class)
   public void testPort2() throws MinioException {
-    MinioClient.builder().endpoint("play.min.io", 70000, false).build();
+    MinioClient.builder().endpoint("s3.hanzo.ai", 70000, false).build();
     Assert.fail("exception should be thrown");
   }
 
@@ -463,7 +463,7 @@ public class MinioClientTest {
       throws NoSuchAlgorithmException, IOException, InvalidKeyException, MinioException {
     KeyGenerator keyGen = KeyGenerator.getInstance("AES");
     keyGen.init(256);
-    MinioClient client = MinioClient.builder().endpoint("http://play.min.io:9000").build();
+    MinioClient client = MinioClient.builder().endpoint("http://s3.hanzo.ai:9000").build();
     client.statObject(
         StatObjectArgs.builder()
             .bucket("mybucket")
@@ -476,7 +476,7 @@ public class MinioClientTest {
   @Test(expected = IllegalArgumentException.class)
   public void testWriteSse1()
       throws NoSuchAlgorithmException, IOException, InvalidKeyException, MinioException {
-    MinioClient client = MinioClient.builder().endpoint("http://play.min.io:9000").build();
+    MinioClient client = MinioClient.builder().endpoint("http://s3.hanzo.ai:9000").build();
     KeyGenerator keyGen = KeyGenerator.getInstance("AES");
     keyGen.init(256);
     client.putObject(
@@ -492,7 +492,7 @@ public class MinioClientTest {
   @Test(expected = IllegalArgumentException.class)
   public void testWriteSse2()
       throws NoSuchAlgorithmException, IOException, InvalidKeyException, MinioException {
-    MinioClient client = MinioClient.builder().endpoint("http://play.min.io:9000").build();
+    MinioClient client = MinioClient.builder().endpoint("http://s3.hanzo.ai:9000").build();
     Map<String, String> myContext = new HashMap<>();
     myContext.put("key1", "value1");
     client.putObject(
@@ -577,7 +577,7 @@ public class MinioClientTest {
       throws NoSuchAlgorithmException, IOException, InvalidKeyException, MinioException {
     MinioClient client =
         MinioClient.builder()
-            .endpoint("http://play.min.io:9000")
+            .endpoint("http://s3.hanzo.ai:9000")
             .credentials("foo", "bar")
             .region("us-east-1")
             .build();

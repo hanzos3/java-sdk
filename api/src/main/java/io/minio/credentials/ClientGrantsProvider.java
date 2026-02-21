@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@ import org.simpleframework.xml.Root;
 
 /**
  * Credential provider using <a
- * href="https://github.com/minio/minio/blob/master/docs/sts/client-grants.md">AssumeRoleWithClientGrants
+ * href="https://github.com/hanzoai/s3/blob/master/docs/sts/client-grants.md">AssumeRoleWithClientGrants
  * API</a>.
  */
 public class ClientGrantsProvider extends WebIdentityClientGrantsProvider {
@@ -61,7 +61,7 @@ public class ClientGrantsProvider extends WebIdentityClientGrantsProvider {
 
   /**
    * Response XML of <a
-   * href="https://github.com/minio/minio/blob/master/docs/sts/client-grants.md">AssumeRoleWithClientGrants
+   * href="https://github.com/hanzoai/s3/blob/master/docs/sts/client-grants.md">AssumeRoleWithClientGrants
    * API</a>.
    */
   @Root(name = "AssumeRoleWithClientGrantsResponse", strict = false)

@@ -1,6 +1,6 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage,
- * (C) 2021 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage,
+ * (C) 2021 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -61,7 +61,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-/** Client to perform MinIO administration operations. */
+/** Client to perform Hanzo S3 administration operations. */
 public class MinioAdminClient {
   private enum Command {
     ADD_USER("add-user"),
@@ -264,7 +264,7 @@ public class MinioAdminClient {
   }
 
   /**
-   * Obtains user info for a specified MinIO user.
+   * Obtains user info for a specified Hanzo S3 user.
    *
    * @param accessKey Access Key.
    * @return {@link UserInfo} - user info for the specified accessKey.
@@ -285,7 +285,7 @@ public class MinioAdminClient {
   }
 
   /**
-   * Obtains a list of all MinIO users.
+   * Obtains a list of all Hanzo S3 users.
    *
    * @return {@link Map<String, UserInfo>} - List of all users.
    * @throws MinioException thrown to indicate SDK exception.
@@ -354,7 +354,7 @@ public class MinioAdminClient {
   }
 
   /**
-   * Obtains group info for a specified MinIO group.
+   * Obtains group info for a specified Hanzo S3 group.
    *
    * @param group Group name.
    * @return {@link GetGroupInfoResponse} - group info for the specified group.
@@ -371,7 +371,7 @@ public class MinioAdminClient {
   }
 
   /**
-   * Obtains a list of all MinIO groups.
+   * Obtains a list of all Hanzo S3 groups.
    *
    * @return {@link List<String>} - List of all groups.
    * @throws MinioException thrown to indicate SDK exception.
@@ -789,7 +789,7 @@ public class MinioAdminClient {
   }
 
   /**
-   * Obtains service account info for a specified MinIO user.
+   * Obtains service account info for a specified Hanzo S3 user.
    *
    * @param accessKey Access Key.
    * @return {@link GetServiceAccountInfoResponse} - Service account info for the specified

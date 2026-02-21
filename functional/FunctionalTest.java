@@ -45,7 +45,7 @@ public class FunctionalTest {
   public static void runMinioAdminTests(TestArgs args) throws Exception {
     if (!args.MINT_ENV) {
       System.out.println();
-      System.out.println(">>> Running MinIO admin API tests:");
+      System.out.println(">>> Running Hanzo S3 admin API tests:");
       new TestMinioAdminClient(
               args,
               MinioAdminClient.builder()

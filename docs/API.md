@@ -1,13 +1,13 @@
-# Java Client API Reference [![Slack](https://slack.min.io/slack?type=svg)](https://slack.min.io)
+# Java Client API Reference
 
-## Create MinIO Client.
+## Create Hanzo S3 Client.
 
-## MinIO
+## Hanzo S3
 
 ```java
 MinioClient minioClient =
     MinioClient.builder()
-        .endpoint("https://play.min.io")
+        .endpoint("https://s3.hanzo.ai")
         .credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
         .build();
 ```
@@ -56,78 +56,78 @@ MinioClient minioClient =
 | [`setBucketVersioning`](#setBucketVersioning)                     |                                                         |
 | [`setObjectLockConfiguration`](#setObjectLockConfiguration)       |                                                         |
 
-## 1. MinIO Client Builder
+## 1. Hanzo S3 Client Builder
 
-MinIO Client Builder is used to create MinIO client. Builder has below methods to accept arguments.
+Hanzo S3 Client Builder is used to create Hanzo S3 client. Builder has below methods to accept arguments.
 | Method          | Description                                                                                                                                |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | `endpoint()`    | Accepts endpoint as a String, URL or okhttp3.HttpUrl object and optionally accepts port number and flag to enable secure (TLS) connection. |
 |                 | Endpoint as a string can be formatted like below:                                                                                          |
 |                 | `https://s3.amazonaws.com`                                                                                                                 |
-|                 | `https://play.min.io`                                                                                                                      |
-|                 | `https://play.min.io:9000`                                                                                                                 |
+|                 | `https://s3.hanzo.ai`                                                                                                                      |
+|                 | `https://s3.hanzo.ai:9000`                                                                                                                 |
 |                 | `localhost`                                                                                                                                |
-|                 | `play.min.io`                                                                                                                              |
+|                 | `s3.hanzo.ai`                                                                                                                              |
 | `credentials()` | Accepts access key (aka user ID) and secret key (aka password) of an account in S3 service.                                                |
 | `region()`      | Accepts region name of S3 service. If specified, all operations use this region otherwise region is probed per bucket.                     |
 | `httpClient()`  | Custom HTTP client to override default.                                                                                                    |
 
 __Examples__
 
-### MinIO
+### Hanzo S3
 
 ```java
-// 1. Create client to S3 service 'play.min.io' at port 443 with TLS security
+// 1. Create client to S3 service 's3.hanzo.ai' at port 443 with TLS security
 // for anonymous access.
-MinioClient minioClient = MinioClient.builder().endpoint("https://play.min.io").build();
+MinioClient minioClient = MinioClient.builder().endpoint("https://s3.hanzo.ai").build();
 
-// 2. Create client to S3 service 'play.min.io' at port 443 with TLS security
+// 2. Create client to S3 service 's3.hanzo.ai' at port 443 with TLS security
 // using URL object for anonymous access.
-MinioClient minioClient = MinioClient.builder().endpoint(new URL("https://play.min.io")).build();
+MinioClient minioClient = MinioClient.builder().endpoint(new URL("https://s3.hanzo.ai")).build();
 
-// 3. Create client to S3 service 'play.min.io' at port 9000 with TLS security
+// 3. Create client to S3 service 's3.hanzo.ai' at port 9000 with TLS security
 // using okhttp3.HttpUrl object for anonymous access.
 MinioClient minioClient =
-    MinioClient.builder().endpoint(HttpUrl.parse("https://play.min.io:9000")).build();
+    MinioClient.builder().endpoint(HttpUrl.parse("https://s3.hanzo.ai:9000")).build();
 
-// 4. Create client to S3 service 'play.min.io' at port 443 with TLS security
+// 4. Create client to S3 service 's3.hanzo.ai' at port 443 with TLS security
 // for authenticated access.
 MinioClient minioClient =
     MinioClient.builder()
-	    .endpoint("https://play.min.io")
+	    .endpoint("https://s3.hanzo.ai")
 		.credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
 		.build();
 
-// 5. Create client to S3 service 'play.min.io' at port 9000 with non-TLS security
+// 5. Create client to S3 service 's3.hanzo.ai' at port 9000 with non-TLS security
 // for authenticated access.
 MinioClient minioClient =
     MinioClient.builder()
-	    .endpoint("play.min.io", 9000, false)
+	    .endpoint("s3.hanzo.ai", 9000, false)
 	    .credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
 		.build();
 
-// 6. Create client to S3 service 'play.min.io' at port 9000 with TLS security
+// 6. Create client to S3 service 's3.hanzo.ai' at port 9000 with TLS security
 // for authenticated access.
 MinioClient minioClient =
     MinioClient.builder()
-	    .endpoint("play.min.io", 9000, true)
+	    .endpoint("s3.hanzo.ai", 9000, true)
 		.credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
 		.build();
 
-// 7. Create client to S3 service 'play.min.io' at port 443 with TLS security
+// 7. Create client to S3 service 's3.hanzo.ai' at port 443 with TLS security
 // and region 'us-west-1' for authenticated access.
 MinioClient minioClient =
     MinioClient.builder()
-	    .endpoint(new URL("https://play.min.io"))
+	    .endpoint(new URL("https://s3.hanzo.ai"))
 		.credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
 		.region("us-west-1")
 		.build();
 
-// 8. Create client to S3 service 'play.min.io' at port 9000 with TLS security,
+// 8. Create client to S3 service 's3.hanzo.ai' at port 9000 with TLS security,
 // region 'eu-east-1' and custom HTTP client for authenticated access.
 MinioClient minioClient =
     MinioClient.builder()
-	    .endpoint("https://play.min.io:9000")
+	    .endpoint("https://s3.hanzo.ai:9000")
 		.credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
 		.region("eu-east-1")
 		.httpClient(customHttpClient)
@@ -1625,7 +1625,7 @@ multipartBuilder.addFormDataPart(
 
 Request request =
     new Request.Builder()
-        .url("https://play.min.io/my-bucketname")
+        .url("https://s3.hanzo.ai/my-bucketname")
         .post(multipartBuilder.build())
         .build();
 OkHttpClient httpClient = new OkHttpClient().newBuilder().build();
@@ -2039,7 +2039,7 @@ StatObjectResponse response =
 ```
 
 ## 5. Explore Further
-- [Build your own Photo API Service - Full Application Example ](https://github.com/minio/minio-java-rest-example)
+- [Build your own Photo API Service - Full Application Example ](https://github.com/hanzos3/java-sdk-rest-example)
 - [Complete JavaDoc](http://minio.github.io/minio-java/)
 
 [constructor-1]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.lang.String-

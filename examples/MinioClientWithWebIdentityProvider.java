@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2020 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -78,10 +78,10 @@ public class MinioClientWithWebIdentityProvider {
     // Client secret to fetch JWT.
     String clientSecret = "PASSWORD";
 
-    // Client-ID of MinIO service on IDP.
+    // Client-ID of Hanzo S3 service on IDP.
     String idpClientId = "MINIO-CLIENT-ID";
 
-    // STS endpoint usually point to MinIO server.
+    // STS endpoint usually point to Hanzo S3 server.
     String stsEndpoint = "http://STS-HOST:STS-PORT/";
 
     // Role ARN if available.

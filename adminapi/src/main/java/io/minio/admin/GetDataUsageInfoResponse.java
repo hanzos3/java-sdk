@@ -1,6 +1,6 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage,
- * (C) 2022 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage,
+ * (C) 2022 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ import java.util.Map;
  * Represents data usage stats of the current object API.
  *
  * @see <a
- *     href="https://github.com/minio/minio/blob/master/cmd/data-usage-utils.go#L69">data-usage-utils.go</a>
+ *     href="https://github.com/hanzoai/s3/blob/master/cmd/data-usage-utils.go#L69">data-usage-utils.go</a>
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GetDataUsageInfoResponse {

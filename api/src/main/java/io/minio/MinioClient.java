@@ -1,6 +1,6 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage,
- * (C) 2015-2021 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage,
+ * (C) 2015-2021 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -69,18 +69,18 @@ import okhttp3.OkHttpClient;
  * Version 4; else they are performed anonymously.
  *
  * <p>Examples on using this library are available <a
- * href="https://github.com/minio/minio-java/tree/master/src/test/java/io/minio/examples">here</a>.
+ * href="https://github.com/hanzos3/java-sdk/tree/master/src/test/java/io/minio/examples">here</a>.
  *
  * <p>Use {@code MinioClient.builder()} to create S3 client.
  *
  * <pre>{@code
  * // Create client with anonymous access.
- * MinioClient minioClient = MinioClient.builder().endpoint("https://play.min.io").build();
+ * MinioClient minioClient = MinioClient.builder().endpoint("https://s3.hanzo.ai").build();
  *
  * // Create client with credentials.
  * MinioClient minioClient =
  *     MinioClient.builder()
- *         .endpoint("https://play.min.io")
+ *         .endpoint("https://s3.hanzo.ai")
  *         .credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
  *         .build();
  * }</pre>
@@ -462,7 +462,7 @@ public class MinioClient implements AutoCloseable {
    *
    * Request request =
    *     new Request.Builder()
-   *         .url("https://play.min.io/my-bucketname")
+   *         .url("https://s3.hanzo.ai/my-bucketname")
    *         .post(multipartBuilder.build())
    *         .build();
    * OkHttpClient httpClient = new OkHttpClient().newBuilder().build();

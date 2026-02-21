@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2025 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2025 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -307,7 +307,7 @@ public class Checksum {
     }
   }
 
-  /** CRC64NVME {@link Hasher} copied from https://github.com/minio/crc64nvme. */
+  /** CRC64NVME {@link Hasher} copied from https://github.com/hanzoai/crc64nvme. */
   public static class CRC64NVME implements java.util.zip.Checksum, Hasher {
     private static final long[] CRC64_TABLE = new long[256];
     private static final long[][] SLICING8_TABLE_NVME = new long[8][256];

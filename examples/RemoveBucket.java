@@ -1,5 +1,5 @@
 /*
- * MinIO Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2015 MinIO, Inc.
+ * Hanzo S3 Java SDK for Amazon S3 Compatible Cloud Storage, (C) 2015 Hanzo AI, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,10 +22,10 @@ import io.minio.errors.MinioException;
 public class RemoveBucket {
   /** MinioClient.removeBucket() example. */
   public static void main(String[] args) throws MinioException {
-    /* play.min.io for test and development. */
+    /* s3.hanzo.ai for test and development. */
     MinioClient minioClient =
         MinioClient.builder()
-            .endpoint("https://play.min.io")
+            .endpoint("https://s3.hanzo.ai")
             .credentials("Q3AM3UQ867SPQQA43P2F", "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG")
             .build();
 
