@@ -231,7 +231,7 @@ All APIs throw below exceptions in addition to specific to API.
 
 <a name="bucketExists"></a>
 ### bucketExists(BucketExistsArgs args)
-`public boolean bucketExists(BucketExistsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#bucketExists-io.minio.BucketExistsArgs-)_
+`public boolean bucketExists(BucketExistsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#bucketExists-io.minio.BucketExistsArgs-)_
 
 Checks if a bucket exists.
 
@@ -258,7 +258,7 @@ if (found) {
 
 <a name="deleteBucketCors"></a>
 ### deleteBucketCors(DeleteBucketCorsArgs args)
-`private void deleteBucketCors(DeleteBucketCorsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#deleteBucketCors-io.minio.DeleteBucketCorsArgs-)_
+`private void deleteBucketCors(DeleteBucketCorsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#deleteBucketCors-io.minio.DeleteBucketCorsArgs-)_
 
 Deletes CORS configuration of a bucket.
 
@@ -274,7 +274,7 @@ minioClient.deleteBucketCors(DeleteBucketCorsArgs.builder().bucket("my-bucketnam
 
 <a name="deleteBucketEncryption"></a>
 ### deleteBucketEncryption(DeleteBucketEncryptionArgs args)
-`private void deleteBucketEncryption(DeleteBucketEncryptionArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#deleteBucketEncryption-io.minio.DeleteBucketEncryptionArgs-)_
+`private void deleteBucketEncryption(DeleteBucketEncryptionArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#deleteBucketEncryption-io.minio.DeleteBucketEncryptionArgs-)_
 
 Deletes encryption configuration of a bucket.
 
@@ -291,7 +291,7 @@ minioClient.deleteBucketEncryption(
 
 <a name="deleteBucketLifecycle"></a>
 ### deleteBucketLifecycle(DeleteBucketLifecycleArgs args)
-`private void deleteBucketLifecycle(DeleteBucketLifecycleArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#deleteBucketLifecycle-io.minio.DeleteBucketLifecycleArgs-)_
+`private void deleteBucketLifecycle(DeleteBucketLifecycleArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#deleteBucketLifecycle-io.minio.DeleteBucketLifecycleArgs-)_
 
 Deletes lifecycle configuration of a bucket.
 
@@ -308,7 +308,7 @@ minioClient.deleteBucketLifecycle(
 
 <a name="deleteBucketTags"></a>
 ### deleteBucketTags(DeleteBucketTagsArgs args)
-`private void deleteBucketTags(DeleteBucketTagsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#deleteBucketTags-io.minio.DeleteBucketTagsArgs-)_
+`private void deleteBucketTags(DeleteBucketTagsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#deleteBucketTags-io.minio.DeleteBucketTagsArgs-)_
 
 Deletes tags of a bucket.
 
@@ -324,7 +324,7 @@ minioClient.deleteBucketTags(DeleteBucketTagsArgs.builder().bucket("my-bucketnam
 
 <a name="deleteBucketPolicy"></a>
 ### deleteBucketPolicy(DeleteBucketPolicyArgs args)
-`private void deleteBucketPolicy(DeleteBucketPolicyArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#deleteBucketPolicy-io.minio.DeleteBucketPolicyArgs-)_
+`private void deleteBucketPolicy(DeleteBucketPolicyArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#deleteBucketPolicy-io.minio.DeleteBucketPolicyArgs-)_
 
 Deletes bucket policy configuration of a bucket.
 
@@ -340,7 +340,7 @@ minioClient.deleteBucketPolicy(DeleteBucketPolicyArgs.builder().bucket("my-bucke
 
 <a name="deleteBucketReplication"></a>
 ### deleteBucketReplication(DeleteBucketReplicationArgs args)
-`private void deleteBucketReplication(DeleteBucketReplicationArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#deleteBucketReplication-io.minio.DeleteBucketReplicationArgs-)_
+`private void deleteBucketReplication(DeleteBucketReplicationArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#deleteBucketReplication-io.minio.DeleteBucketReplicationArgs-)_
 
 Deletes bucket replication configuration of a bucket.
 
@@ -357,7 +357,7 @@ minioClient.deleteBucketReplication(
 
 <a name="deleteBucketNotification"></a>
 ### deleteBucketNotification(DeleteBucketNotificationArgs args)
-`public void deleteBucketNotification(DeleteBucketNotificationArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#deleteBucketNotification-io.minio.DeleteBucketNotificationArgs-)_
+`public void deleteBucketNotification(DeleteBucketNotificationArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#deleteBucketNotification-io.minio.DeleteBucketNotificationArgs-)_
 
 Deletes notification configuration of a bucket.
 
@@ -374,7 +374,7 @@ minioClient.deleteBucketNotification(
 
 <a name="deleteObjectLockConfiguration"></a>
 ### deleteObjectLockConfiguration(DeleteObjectLockConfigurationArgs args)
-`public void deleteObjectLockConfiguration(DeleteObjectLockConfigurationArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#deleteObjectLockConfiguration-io.minio.DeleteObjectLockConfigurationArgs-)_
+`public void deleteObjectLockConfiguration(DeleteObjectLockConfigurationArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#deleteObjectLockConfiguration-io.minio.DeleteObjectLockConfigurationArgs-)_
 
 Deletes object-lock configuration in a bucket.
 
@@ -391,7 +391,7 @@ minioClient.deleteObjectLockConfiguration(
 
 <a name="getBucketCors"></a>
 ### getBucketCors(GetBucketCorsArgs args)
-`public Tags getBucketCors(GetBucketCorsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.htmlgetBucketCors-io.minio.GetBucketCorsArgs-)_
+`public Tags getBucketCors(GetBucketCorsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.htmlgetBucketCors-io.minio.GetBucketCorsArgs-)_
 
 Gets CORS configuration of a bucket.
 
@@ -412,7 +412,7 @@ CORSConfiguration config = minioClient.getBucketCors(GetBucketCorsArgs.builder()
 
 <a name="getBucketEncryption"></a>
 ### getBucketEncryption(GetBucketEncryptionArgs args)
-`public SseConfiguration getBucketEncryption(GetBucketEncryptionArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getBucketEncryption-io.minio.GetBucketEncryptionArgs-)_
+`public SseConfiguration getBucketEncryption(GetBucketEncryptionArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getBucketEncryption-io.minio.GetBucketEncryptionArgs-)_
 
 Gets encryption configuration of a bucket.
 
@@ -434,7 +434,7 @@ SseConfiguration config =
 
 <a name="getBucketLifecycle"></a>
 ### getBucketLifecycle(GetBucketLifecycleArgs args)
-`public LifecycleConfiguration getBucketLifecycle(GetBucketLifecycleArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getBucketLifecycle-io.minio.GetBucketLifecycleArgs-)_
+`public LifecycleConfiguration getBucketLifecycle(GetBucketLifecycleArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getBucketLifecycle-io.minio.GetBucketLifecycleArgs-)_
 
 Gets lifecycle configuration of a bucket.
 
@@ -457,7 +457,7 @@ System.out.println("Lifecycle configuration: " + config);
 
 <a name="getBucketNotification"></a>
 ### getBucketNotification(GetBucketNotificationArgs args)
-`public NotificationConfiguration getBucketNotification(GetBucketNotificationArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getBucketNotification-io.minio.GetBucketNotificationArgs-)_
+`public NotificationConfiguration getBucketNotification(GetBucketNotificationArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getBucketNotification-io.minio.GetBucketNotificationArgs-)_
 
 Gets notification configuration of a bucket.
 
@@ -479,7 +479,7 @@ NotificationConfiguration config =
 
 <a name="getBucketPolicy"></a>
 ### getBucketPolicy(GetBucketPolicyArgs args)
-`public String getBucketPolicy(GetBucketPolicyArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getBucketPolicy-io.minio.GetBucketPolicyArgs-)_
+`public String getBucketPolicy(GetBucketPolicyArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getBucketPolicy-io.minio.GetBucketPolicyArgs-)_
 
 Gets bucket policy configuration of a bucket.
 
@@ -501,7 +501,7 @@ String config =
 
 <a name="getBucketReplication"></a>
 ### getBucketReplication(GetBucketReplicationArgs args)
-`public ReplicationConfiguration getBucketReplication(GetBucketReplicationArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getBucketReplication-io.minio.GetBucketReplicationArgs-)_
+`public ReplicationConfiguration getBucketReplication(GetBucketReplicationArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getBucketReplication-io.minio.GetBucketReplicationArgs-)_
 
 Gets bucket replication configuration of a bucket.
 
@@ -524,7 +524,7 @@ ReplicationConfiguration config =
 
 <a name="getBucketTags"></a>
 ### getBucketTags(GetBucketTagsArgs args)
-`public Tags getBucketTags(GetBucketTagsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.htmlgetBucketTags-io.minio.GetBucketTagsArgs-)_
+`public Tags getBucketTags(GetBucketTagsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.htmlgetBucketTags-io.minio.GetBucketTagsArgs-)_
 
 Gets tags of a bucket.
 
@@ -545,7 +545,7 @@ Tags tags = minioClient.getBucketTags(GetBucketTagsArgs.builder().bucket("my-buc
 
 <a name="getBucketVersioning"></a>
 ### getBucketVersioning(GetBucketVersioningArgs args)
-`public VersioningConfiguration getBucketVersioning(GetBucketVersioningArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getBucketVersioning-io.minio.GetBucketVersioningArgs-)_
+`public VersioningConfiguration getBucketVersioning(GetBucketVersioningArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getBucketVersioning-io.minio.GetBucketVersioningArgs-)_
 
 Gets versioning configuration of a bucket.
 
@@ -567,7 +567,7 @@ VersioningConfiguration config =
 
 <a name="getObjectLockConfiguration"></a>
 ### getObjectLockConfiguration(GetObjectLockConfigurationArgs args)
-`public ObjectLockConfiguration getObjectLockConfiguration(GetObjectLockConfigurationArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getObjectLockConfiguration-io.minio.GetObjectLockConfigurationArgs-)_
+`public ObjectLockConfiguration getObjectLockConfiguration(GetObjectLockConfigurationArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getObjectLockConfiguration-io.minio.GetObjectLockConfigurationArgs-)_
 
 Gets object-lock configuration in a bucket.
 
@@ -592,7 +592,7 @@ System.out.println("Duration: " + config.duration().duration() + " " + config.du
 
 <a name="listBuckets"></a>
 ### listBuckets()
-`public List<Bucket> listBuckets()` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#listBuckets--)_
+`public List<Bucket> listBuckets()` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#listBuckets--)_
 
 Lists bucket information of all buckets.
 
@@ -610,7 +610,7 @@ for (Bucket bucket : bucketList) {
 
 <a name="listBuckets"></a>
 ### listBuckets(ListBucketsArgs args)
-`public List<Bucket> listBuckets(ListBucketsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#listBuckets-io.minio.ListBucketsArgs-)_
+`public List<Bucket> listBuckets(ListBucketsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#listBuckets-io.minio.ListBucketsArgs-)_
 
 Lists bucket information of all buckets.
 
@@ -634,7 +634,7 @@ for (Bucket bucket : bucketList) {
 
 <a name="listenBucketNotification"></a>
 ### listenBucketNotification(ListenBucketNotificationArgs args)
-`public CloseableIterator<Result<NotificationRecords>> listenBucketNotification(ListenBucketNotificationArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#listenBucketNotification-io.minio.ListenBucketNotificationArgs-)_
+`public CloseableIterator<Result<NotificationRecords>> listenBucketNotification(ListenBucketNotificationArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#listenBucketNotification-io.minio.ListenBucketNotificationArgs-)_
 
 Listens events of object prefix and suffix of a bucket. The returned closable iterator is lazily evaluated hence its required to iterate to get new records and must be used with try-with-resource to release underneath network resources.
 
@@ -670,7 +670,7 @@ try (CloseableIterator<Result<NotificationRecords>> ci =
 
 <a name="listObjects"></a>
 ### listObjects(ListObjectsArgs args)
-`public Iterable<Result<Item>> listObjects(ListObjectsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#listObjects-io.minio.ListObjectsArgs-)_
+`public Iterable<Result<Item>> listObjects(ListObjectsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#listObjects-io.minio.ListObjectsArgs-)_
 
 Lists object information of a bucket.
 
@@ -715,7 +715,7 @@ Iterable<Result<Item>> results = minioClient.listObjects(
 ```
 
 ### makeBucket(MakeBucketArgs args)
-`public void makeBucket(MakeBucketArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#makeBucket-io.minio.MakeBucketArgs-)_
+`public void makeBucket(MakeBucketArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#makeBucket-io.minio.MakeBucketArgs-)_
 
 Creates a bucket with given region and object lock feature enabled.
 
@@ -752,7 +752,7 @@ minioClient.makeBucket(
 
 <a name="removeBucket"></a>
 ### removeBucket(RemoveBucketArgs args)
-`public void removeBucket(RemoveBucketArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#removeBucket-io.minio.RemoveBucketArgs-)_
+`public void removeBucket(RemoveBucketArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#removeBucket-io.minio.RemoveBucketArgs-)_
 
 Removes an empty bucket.
 
@@ -769,7 +769,7 @@ minioClient.removeBucket(RemoveBucketArgs.builder().bucket(bucketName).build());
 
 <a name="setBucketCors"></a>
 ### setBucketCors(SetBucketCorsArgs args)
-`public void setBucketCors(SetBucketCorsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setBucketCors-io.minio.SetBucketCorsArgs-)_
+`public void setBucketCors(SetBucketCorsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setBucketCors-io.minio.SetBucketCorsArgs-)_
 
 Sets CORS configuration to a bucket.
 
@@ -809,7 +809,7 @@ minioClient.setBucketCors(SetBucketCorsArgs.builder().bucket("my-bucketname").co
 
 <a name="setBucketEncryption"></a>
 ### setBucketEncryption(SetBucketEncryptionArgs args)
-`public void setBucketEncryption(SetBucketEncryptionArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setBucketEncryption-io.minio.SetBucketEncryptionArgs-)_
+`public void setBucketEncryption(SetBucketEncryptionArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setBucketEncryption-io.minio.SetBucketEncryptionArgs-)_
 
 Sets encryption configuration of a bucket.
 
@@ -826,7 +826,7 @@ minioClient.setBucketEncryption(
 
 <a name="setBucketLifecycle"></a>
 ### setBucketLifecycle(SetBucketLifecycleArgs args)
-`public void setBucketLifecycle(SetBucketLifecycleArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setBucketLifecycle-io.minio.SetBucketLifecycleArgs-)_
+`public void setBucketLifecycle(SetBucketLifecycleArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setBucketLifecycle-io.minio.SetBucketLifecycleArgs-)_
 
 Sets lifecycle configuration to a bucket.
 
@@ -865,7 +865,7 @@ minioClient.setBucketLifecycle(
 
 <a name="setBucketNotification"></a>
 ### setBucketNotification(SetBucketNotificationArgs args)
-`public void setBucketNotification(SetBucketNotificationArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setBucketNotification-io.minio.SetBucketNotificationArgs-)_
+`public void setBucketNotification(SetBucketNotificationArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setBucketNotification-io.minio.SetBucketNotificationArgs-)_
 
 Sets notification configuration to a bucket.
 
@@ -899,7 +899,7 @@ minioClient.setBucketNotification(
 
 <a name="setBucketPolicy"></a>
 ### setBucketPolicy(SetBucketPolicyArgs args)
-`public void setBucketPolicy(SetBucketPolicyArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setBucketPolicy-io.minio.SetBucketPolicyArgs-)_
+`public void setBucketPolicy(SetBucketPolicyArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setBucketPolicy-io.minio.SetBucketPolicyArgs-)_
 
 Sets bucket policy configuration to a bucket.
 
@@ -939,7 +939,7 @@ minioClient.setBucketPolicy(
 
 <a name="setBucketReplication"></a>
 ### setBucketReplication(SetBucketReplicationArgs args)
-`public void setBucketReplication(SetBucketReplicationArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setBucketReplication-io.minio.SetBucketReplicationArgs-)_
+`public void setBucketReplication(SetBucketReplicationArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setBucketReplication-io.minio.SetBucketReplicationArgs-)_
 
 Sets bucket replication configuration to a bucket.
 
@@ -980,7 +980,7 @@ minioClient.setBucketReplication(
 
 <a name="setBucketTags"></a>
 ### setBucketTags(SetBucketTagsArgs args)
-`public void setBucketTags(SetBucketTagsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setBucketTags-io.minio.SetBucketTagsArgs-)_
+`public void setBucketTags(SetBucketTagsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setBucketTags-io.minio.SetBucketTagsArgs-)_
 
 Sets tags to a bucket.
 
@@ -1000,7 +1000,7 @@ minioClient.setBucketTags(SetBucketTagsArgs.builder().bucket("my-bucketname").ta
 
 <a name="setBucketVersioning"></a>
 ### setBucketVersioning(SetBucketVersioningArgs args)
-`public void setBucketVersioning(SetBucketVersioningArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setBucketVersioning-io.minio.SetBucketVersioningArgs-)_
+`public void setBucketVersioning(SetBucketVersioningArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setBucketVersioning-io.minio.SetBucketVersioningArgs-)_
 
 Sets versioning configuration of a bucket.
 
@@ -1017,7 +1017,7 @@ minioClient.setBucketVersioning(
 
 <a name="setObjectLockConfiguration"></a>
 ### setObjectLockConfiguration(SetObjectLockConfigurationArgs args)
-`public void setObjectLockConfiguration(SetObjectLockConfigurationArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setObjectLockConfiguration-io.minio.SetObjectLockConfigurationArgs-)_
+`public void setObjectLockConfiguration(SetObjectLockConfigurationArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setObjectLockConfiguration-io.minio.SetObjectLockConfigurationArgs-)_
 
 Sets object-lock configuration in a bucket.
 
@@ -1038,7 +1038,7 @@ minioClient.setObjectLockConfiguration(
 
 <a name="composeObject"></a>
 ### composeObject(ComposeObjectArgs args)
-`public ObjectWriteResponse composeObject(ComposeObjectArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#composeObject-io.minio.ComposeObjectArgs--)_
+`public ObjectWriteResponse composeObject(ComposeObjectArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#composeObject-io.minio.ComposeObjectArgs--)_
 
 Creates an object by combining data from different source objects using server-side copy.
 
@@ -1095,7 +1095,7 @@ minioClient.composeObject(
 
 <a name="copyObject"></a>
 ### copyObject(CopyObjectArgs args)
-`public ObjectWriteResponse copyObject(CopyObjectArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#copyObject-io.minio.CopyObjectArgs-)_
+`public ObjectWriteResponse copyObject(CopyObjectArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#copyObject-io.minio.CopyObjectArgs-)_
 
 Creates an object by server-side copying data from another object.
 
@@ -1211,7 +1211,7 @@ minioClient.copyObject(
 
 <a name="deleteObjectTags"></a>
 ### deleteObjectTags(DeleteObjectTagsArgs args)
-`private void deleteObjectTags(DeleteObjectTagsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#deleteObjectTags-io.minio.DeleteObjectTagsArgs-)_
+`private void deleteObjectTags(DeleteObjectTagsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#deleteObjectTags-io.minio.DeleteObjectTagsArgs-)_
 
 Deletes tags of an object.
 
@@ -1228,7 +1228,7 @@ minioClient.deleteObjectTags(
 
 <a name="disableObjectLegalHold"></a>
 ### disableObjectLegalHold(DisableObjectLegalHoldArgs args)
-`public void disableObjectLegalHold(DisableObjectLegalHoldArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#disableObjectLegalHold-io.minio.DisableObjectLegalHoldArgs-)_
+`public void disableObjectLegalHold(DisableObjectLegalHoldArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#disableObjectLegalHold-io.minio.DisableObjectLegalHoldArgs-)_
 
 Disables legal hold on an object.
 
@@ -1251,7 +1251,7 @@ minioClient.disableObjectLegalHold(
 
 <a name="enableObjectLegalHold"></a>
 ### enableObjectLegalHold(EnableObjectLegalHoldArgs args)
-`public void enableObjectLegalHold(EnableObjectLegalHoldArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#enableObjectLegalHold-io.minio.EnableObjectLegalHoldArgs-)_
+`public void enableObjectLegalHold(EnableObjectLegalHoldArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#enableObjectLegalHold-io.minio.EnableObjectLegalHoldArgs-)_
 
 Enables legal hold on an object.
 
@@ -1275,7 +1275,7 @@ minioClient.enableObjectLegalHold(
 
 <a name="getObject"></a>
 ### getObject(GetObjectArgs args)
-`public InputStream getObject(GetObjectArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getObject-io.minio.GetObjectArgs-)_
+`public InputStream getObject(GetObjectArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getObject-io.minio.GetObjectArgs-)_
 
 Gets data of an object. Returned `InputStream` must be closed after use to release network resources.
 
@@ -1345,7 +1345,7 @@ try (InputStream stream = minioClient.getObject(
 
 <a name="getObjectAcl"></a>
 ### getObjectAcl(GetObjectAclArgs args)
-`public Acl getObjectAcl(GetObjectAclArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getObjectAcl-io.minio.GetObjectAclArgs-)_
+`public Acl getObjectAcl(GetObjectAclArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getObjectAcl-io.minio.GetObjectAclArgs-)_
 
 Gets tags of an object.
 
@@ -1367,7 +1367,7 @@ AccessControlPolicy policy = minioClient.getObjectAcl(
 
 <a name="getObjectAttributes"></a>
 ### getObjectAttributes(GetObjectAttributesArgs args)
-`public GetObjectAttributesResponse getObjectAttributes(GetObjectAttributesArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getObjectAttributes-io.minio.GetObjectAttributesArgs-)_
+`public GetObjectAttributesResponse getObjectAttributes(GetObjectAttributesArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getObjectAttributes-io.minio.GetObjectAttributesArgs-)_
 
 Gets tags of an object.
 
@@ -1397,7 +1397,7 @@ GetObjectAttributesResponse response =
 
 <a name="downloadObject"></a>
 ### downloadObject(DownloadObjectArgs args)
-`public void downloadObject(DownloadObjectArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getObject-io.minio.DownloadObjectArgs-)_
+`public void downloadObject(DownloadObjectArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getObject-io.minio.DownloadObjectArgs-)_
 
 Downloads data of an object to file.
 
@@ -1428,7 +1428,7 @@ minioClient.downloadObject(
 
  <a name="getObjectRetention"></a>
 ### getObjectRetention(GetObjectRetentionArgs args)
-`public Retention getObjectRetention(GetObjectRetentionArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getObjectRetention-io.minio.GetObjectRetentionArgs-)_
+`public Retention getObjectRetention(GetObjectRetentionArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getObjectRetention-io.minio.GetObjectRetentionArgs-)_
 
 Gets retention configuration of an object.
 
@@ -1457,7 +1457,7 @@ System.out.println("mode: " + retention.mode() + "until: " + retention.retainUnt
 
 <a name="getObjectTags"></a>
 ### getObjectTags(GetObjectTagsArgs args)
-`public Tags getObjectTags(GetObjectTagsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getObjectTags-io.minio.GetObjectTagsArgs-)_
+`public Tags getObjectTags(GetObjectTagsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getObjectTags-io.minio.GetObjectTagsArgs-)_
 
 Gets tags of an object.
 
@@ -1479,7 +1479,7 @@ Tags tags = minioClient.getObjectTags(
 
  <a name="getPresignedObjectUrl"></a>
 ### getPresignedObjectUrl(GetPresignedObjectUrlArgs args)
-`public String getPresignedObjectUrl(GetPresignedObjectUrlArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getPresignedObjectUrl-io.minio.GetPresignedObjectUrlArgs-)_
+`public String getPresignedObjectUrl(GetPresignedObjectUrlArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getPresignedObjectUrl-io.minio.GetPresignedObjectUrlArgs-)_
 
 Gets presigned URL of an object for HTTP method, expiry time and custom request parameters.
 
@@ -1547,7 +1547,7 @@ System.out.println(url);
 
  <a name="isObjectLegalHoldEnabled"></a>
 ### isObjectLegalHoldEnabled(IsObjectLegalHoldEnabledArgs args)
-`public boolean isObjectLegalHoldEnabled(IsObjectLegalHoldEnabledArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#isObjectLegalHoldEnabled-io.minio.IsObjectLegalHoldEnabledArgs-)_
+`public boolean isObjectLegalHoldEnabled(IsObjectLegalHoldEnabledArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#isObjectLegalHoldEnabled-io.minio.IsObjectLegalHoldEnabledArgs-)_
 
 Returns true if legal hold is enabled on an object.
 
@@ -1581,7 +1581,7 @@ else {
 
 <a name="getPresignedPostFormData"></a>
 ### getPresignedPostFormData(PostPolicy policy)
-`public Map<String,String> getPresignedPostFormData(PostPolicy policy)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#getPresignedPostFormData-io.minio.PostPolicy-)_
+`public Map<String,String> getPresignedPostFormData(PostPolicy policy)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#getPresignedPostFormData-io.minio.PostPolicy-)_
 
 Gets form-data of [PostPolicy] of an object to upload its data using POST method.
 
@@ -1639,7 +1639,7 @@ if (response.isSuccessful()) {
 
 <a name="promptObject"></a>
 ### promptObject(PromptObjectArgs args)
-`public ObjectWriteResponse promptObject(PromptObjectArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#promptObject-io.minio.PromptObjectArgs-)_
+`public ObjectWriteResponse promptObject(PromptObjectArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#promptObject-io.minio.PromptObjectArgs-)_
 
 Performs language model inference with the prompt and referenced object as context.
 
@@ -1654,7 +1654,7 @@ __Parameters__
 
 <a name="putObject"></a>
 ### putObject(PutObjectArgs args)
-`public ObjectWriteResponse putObject(PutObjectArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#putObject-io.minio.PutObjectArgs-)_
+`public ObjectWriteResponse putObject(PutObjectArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#putObject-io.minio.PutObjectArgs-)_
 
 Uploads given stream as object in bucket.
 
@@ -1711,7 +1711,7 @@ minioClient.putObject(
 
 <a name="putObjectFanOut"></a>
 ### putObjectFanOut(PutObjectFanOutArgs args)
-`public PutObjectFanOutResponse putObjectFanOut(PutObjectFanOutArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#putObjectFanOut-io.minio.PutObjectFanOutArgs-)_
+`public PutObjectFanOutResponse putObjectFanOut(PutObjectFanOutArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#putObjectFanOut-io.minio.PutObjectFanOutArgs-)_
 
 Uploads multiple objects with same content from single stream with optional metadata and tags.
 
@@ -1745,7 +1745,7 @@ PutObjectFanOutResponse response =
 
 <a name="uploadObject"></a>
 ### uploadObject(UploadObjectArgs args)
-`public void uploadObject(UploadObjectArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#uploadObject-io.minio.UploadObjectArgs-)_
+`public void uploadObject(UploadObjectArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#uploadObject-io.minio.UploadObjectArgs-)_
 
 Uploads contents from a file as object in bucket.
 
@@ -1773,7 +1773,7 @@ minioClient.uploadObject(
 
 <a name="uploadSnowballObjects"></a>
 ### uploadSnowballObjects(UploadSnowballObjectsArgs args)
-`public void uploadSnowballObjects(UploadSnowballObjectsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#uploadSnowballObjects-io.minio.UploadSnowballObjectsArgs-)_
+`public void uploadSnowballObjects(UploadSnowballObjectsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#uploadSnowballObjects-io.minio.UploadSnowballObjectsArgs-)_
 
 Uploads multiple objects in a single put call. It is done by creating intermediate TAR file optionally compressed which is uploaded to S3 service.
 
@@ -1803,7 +1803,7 @@ minioClient.uploadSnowballObjects(
 
 <a name="removeObject"></a>
 ### removeObject(RemoveObjectArgs args)
-`public void removeObject(RemoveObjectArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#removeObject-io.minio.RemoveObjectArgs-)_
+`public void removeObject(RemoveObjectArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#removeObject-io.minio.RemoveObjectArgs-)_
 
 Removes an object.
 
@@ -1838,7 +1838,7 @@ minioClient.removeObject(
 
 <a name="removeObjects"></a>
 ### removeObjects(RemoveObjectsArgs args)
-`public Iterable<Result<DeleteError>> removeObjects(RemoveObjectsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#removeObjects-io.minio.RemoveObjectsArgs-)_
+`public Iterable<Result<DeleteError>> removeObjects(RemoveObjectsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#removeObjects-io.minio.RemoveObjectsArgs-)_
 
 Removes multiple objects lazily. Its required to iterate the returned Iterable to perform removal.
 
@@ -1869,7 +1869,7 @@ for (Result<DeleteError> result : results) {
 
 <a name="restoreObject"></a>
 ### restoreObject(RestoreObjectArgs args)
-`public void restoreObject(RestoreObjectArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#restoreObject-io.minio.RestoreObjectArgs-)_
+`public void restoreObject(RestoreObjectArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#restoreObject-io.minio.RestoreObjectArgs-)_
 
 Restores an object.
 
@@ -1900,7 +1900,7 @@ minioClient.restoreObject(
 
  <a name="selectObjectContent"></a>
 ### selectObjectContent(SelectObjectContentArgs args)
-`public SelectResponseStream selectObjectContent(SelectObjectContentArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#selectObjectContent-io.minio.SelectObjectContentArgs-)_
+`public SelectResponseStream selectObjectContent(SelectObjectContentArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#selectObjectContent-io.minio.SelectObjectContentArgs-)_
 
 Selects content of a object by SQL expression.
 
@@ -1944,7 +1944,7 @@ stream.close();
 
 <a name="setObjectRetention"></a>
 ### setObjectRetention(SetObjectRetentionArgs args)
-`public void setObjectLockRetention(SetObjectRetentionArgs)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setObjectRetention-io.minio.SetObjectRetentionArgs-)_
+`public void setObjectLockRetention(SetObjectRetentionArgs)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setObjectRetention-io.minio.SetObjectRetentionArgs-)_
 
 Sets retention configuration to an object.
 
@@ -1968,7 +1968,7 @@ minioClient.setObjectRetention(
 
 <a name="setObjectTags"></a>
 ### setObjectTags(SetObjectTagsArgs args)
-`public void setObjectTags(SetObjectTagsArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#setObjectTags-io.minio.SetObjectTagsArgs-)_
+`public void setObjectTags(SetObjectTagsArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#setObjectTags-io.minio.SetObjectTagsArgs-)_
 
 Sets tags to an object.
 
@@ -1989,7 +1989,7 @@ minioClient.setObjectTags(
 
 <a name="statObject"></a>
 ### statObject(StatObjectArgs args)
-`public StatObjectResponse statObject(StatObjectArgs args)` _[[Javadoc]](http://minio.github.io/minio-java/io/minio/MinioClient.html#statObject-io.minio.StatObjectArgs-)_
+`public StatObjectResponse statObject(StatObjectArgs args)` _[[Javadoc]](http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#statObject-io.minio.StatObjectArgs-)_
 
 Gets object information and metadata of an object.
 
@@ -2040,105 +2040,105 @@ StatObjectResponse response =
 
 ## 5. Explore Further
 - [Build your own Photo API Service - Full Application Example ](https://github.com/hanzos3/java-sdk-rest-example)
-- [Complete JavaDoc](http://minio.github.io/minio-java/)
+- [Complete JavaDoc](http://hanzos3.github.io/java-sdk/)
 
-[constructor-1]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.lang.String-
-[constructor-2]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.net.URL-
-[constructor-3]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-okhttp3.HttpUrl-
-[constructor-4]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.lang.String-java.lang.String-java.lang.String-
-[constructor-5]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.lang.String-int-java.lang.String-java.lang.String-
-[constructor-6]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.lang.String-java.lang.String-java.lang.String-boolean-
-[constructor-7]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.lang.String-int-java.lang.String-java.lang.String-java.lang.String-boolean-
-[constructor-8]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-okhttp3.HttpUrl-java.lang.String-java.lang.String-
-[constructor-9]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.net.URL-java.lang.String-java.lang.String-
-[constructor-10]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.lang.String-java.lang.String-java.lang.String-java.lang.String-
-[constructor-11]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.lang.String-int-java.lang.String-java.lang.String-java.lang.String-boolean-
-[constructor-12]: http://minio.github.io/minio-java/io/minio/MinioClient.html#MinioClient-java.lang.String-java.lang.Integer-java.lang.String-java.lang.String-java.lang.String-java.lang.Boolean-okhttp3.OkHttpClient-
-[NotificationConfiguration]: http://minio.github.io/minio-java/io/minio/messages/NotificationConfiguration.html
-[ObjectLockConfiguration]: http://minio.github.io/minio-java/io/minio/messages/ObjectLockConfiguration.html
-[Bucket]: http://minio.github.io/minio-java/io/minio/messages/Bucket.html
-[CloseableIterator]: http://minio.github.io/minio-java/io/minio/CloseableIterator.html
-[Result]: http://minio.github.io/minio-java/io/minio/Result.html
-[NotificationRecords]: http://minio.github.io/minio-java/io/minio/messages/NotificationRecords.html
-[Upload]: http://minio.github.io/minio-java/io/minio/messages/Upload.html
-[Item]: http://minio.github.io/minio-java/io/minio/messages/Item.html
-[ComposeSource]: http://minio.github.io/minio-java/io/minio/ComposeSource.html
-[ServerSideEncryption]: http://minio.github.io/minio-java/io/minio/ServerSideEncryption.html
-[ServerSideEncryptionCustomerKey]: http://minio.github.io/minio-java/io/minio/ServerSideEncryptionCustomerKey.html
-[CopyConditions]: http://minio.github.io/minio-java/io/minio/CopyConditions.html
-[PostPolicy]: http://minio.github.io/minio-java/io/minio/PostPolicy.html
-[PutObjectOptions]: http://minio.github.io/minio-java/io/minio/PutObjectOptions.html
-[InputSerialization]: http://minio.github.io/minio-java/io/minio/messages/InputSerialization.html
-[OutputSerialization]: http://minio.github.io/minio-java/io/minio/messages/OutputSerialization.html
-[Retention]: http://minio.github.io/minio-java/io/minio/messages/Retention.html
-[StatObjectResponse]: http://minio.github.io/minio-java/io/minio/StatObjectResponse.html
-[DeleteError]: http://minio.github.io/minio-java/io/minio/messages/DeleteError.html
-[SelectResponseStream]: http://minio.github.io/minio-java/io/minio/SelectResponseStream.html
-[MakeBucketArgs]: http://minio.github.io/minio-java/io/minio/MakeBucketArgs.html
-[ListObjectsArgs]: http://minio.github.io/minio-java/io/minio/ListObjectsArgs.html
-[RemoveBucketArgs]: http://minio.github.io/minio-java/io/minio/RemoveBucketArgs.html
-[SetObjectRetentionArgs]: http://minio.github.io/minio-java/io/minio/SetObjectRetentionArgs.html
-[GetObjectRetentionArgs]: http://minio.github.io/minio-java/io/minio/GetObjectRetentionArgs.html
-[Method]: http://minio.github.io/minio-java/io/minio/http/Method.html
-[StatObjectArgs]: http://minio.github.io/minio-java/io/minio/StatObjectArgs.html
-[RemoveObjectArgs]: http://minio.github.io/minio-java/io/minio/RemoveObjectArgs.html
-[SseConfiguration]: http://minio.github.io/minio-java/io/minio/messages/SseConfiguration.html
-[DeleteBucketEncryptionArgs]: http://minio.github.io/minio-java/io/minio/DeleteBucketEncryptionArgs.html
-[GetBucketEncryptionArgs]: http://minio.github.io/minio-java/io/minio/GetBucketEncryptionArgs.html
-[SetBucketEncryptionArgs]: http://minio.github.io/minio-java/io/minio/SetBucketEncryptionArgs.html
-[Tags]: http://minio.github.io/minio-java/io/minio/messages/Tags.html
-[DeleteBucketTagsArgs]: http://minio.github.io/minio-java/io/minio/DeleteBucketTagsArgs.html
-[GetBucketTagsArgs]: http://minio.github.io/minio-java/io/minio/GetBucketTagsArgs.html
-[SetBucketTagsArgs]: http://minio.github.io/minio-java/io/minio/SetBucketTagsArgs.html
-[DeleteObjectTagsArgs]: http://minio.github.io/minio-java/io/minio/DeleteObjectTagsArgs.html
-[GetObjectTagsArgs]: http://minio.github.io/minio-java/io/minio/GetObjectTagsArgs.html
-[SetObjectTagsArgs]: http://minio.github.io/minio-java/io/minio/SetObjectTagsArgs.html
-[LifecycleConfiguration]: http://minio.github.io/minio-java/io/minio/messages/LifecycleConfiguration.html
-[DeleteBucketLifecycleArgs]: http://minio.github.io/minio-java/io/minio/DeleteBucketLifecycleArgs.html
-[GetBucketLifecycleArgs]: http://minio.github.io/minio-java/io/minio/GetBucketLifecycleArgs.html
-[SetBucketLifecycleArgs]: http://minio.github.io/minio-java/io/minio/SetBucketLifecycleArgs.html
-[GetBucketPolicyArgs]: http://minio.github.io/minio-java/io/minio/GetBucketPolicyArgs.html
-[SetBucketPolicyArgs]: http://minio.github.io/minio-java/io/minio/SetBucketPolicyArgs.html
-[DeleteBucketPolicyArgs]: http://minio.github.io/minio-java/io/minio/DeleteBucketPolicyArgs.html
-[GetObjectArgs]: http://minio.github.io/minio-java/io/minio/GetObjectArgs.html
-[DownloadObjectArgs]: http://minio.github.io/minio-java/io/minio/DownloadObjectArgs.html
-[BucketExistsArgs]: http://minio.github.io/minio-java/io/minio/BucketExistsArgs.html
-[EnableObjectLegalHoldArgs]: http://minio.github.io/minio-java/io/minio/EnableObjectLegalHoldArgs.html
-[DisableObjectLegalHoldArgs]: http://minio.github.io/minio-java/io/minio/DisableObjectLegalHoldArgs.html
-[IsObjectLegalHoldEnabledArgs]: http://minio.github.io/minio-java/io/minio/IsObjectLegalHoldEnabledArgs.html
-[DeleteBucketNotificationArgs]: http://minio.github.io/minio-java/io/minio/DeleteBucketNotificationArgs.html
-[GetBucketNotificationArgs]: http://minio.github.io/minio-java/io/minio/GetBucketNotificationArgs.html
-[SetBucketNotificationArgs]: http://minio.github.io/minio-java/io/minio/SetBucketNotificationArgs.html
-[ListenBucketNotificationArgs]: http://minio.github.io/minio-java/io/minio/ListenBucketNotificationArgs.html
-[SelectObjectContentArgs]: http://minio.github.io/minio-java/io/minio/SelectObjectContentArgs.html
-[GetObjectLockConfigurationArgs]: http://minio.github.io/minio-java/io/minio/GetObjectLockConfigurationArgs.html
-[SetObjectLockConfigurationArgs]: http://minio.github.io/minio-java/io/minio/SetObjectLockConfigurationArgs.html
-[DeleteObjectLockConfigurationArgs]: http://minio.github.io/minio-java/io/minio/DeleteObjectLockConfigurationArgs.html
-[GetPresignedObjectUrlArgs]: http://minio.github.io/minio-java/io/minio/GetPresignedObjectUrlArgs.html
-[RemoveObjectsArgs]: http://minio.github.io/minio-java/io/minio/RemoveObjectsArgs.html
-[CopyObjectArgs]: http://minio.github.io/minio-java/io/minio/CopyObjectArgs.html
-[PutObjectArgs]: http://minio.github.io/minio-java/io/minio/PutObjectArgs.html
-[UploadObjectArgs]: http://minio.github.io/minio-java/io/minio/UploadObjectArgs.html
-[UploadSnowballObjectsArgs]: http://minio.github.io/minio-java/io/minio/UploadSnowballObjectsArgs.html
-[ComposeObjectArgs]: http://minio.github.io/minio-java/io/minio/ComposeObjectArgs.html
-[ObjectWriteResponse]: http://minio.github.io/minio-java/io/minio/ObjectWriteResponse.html
-[ListBucketsArgs]: http://minio.github.io/minio-java/io/minio/ListBucketsArgs.html
-[DeleteBucketReplicationArgs]: http://minio.github.io/minio-java/io/minio/DeleteBucketReplicationArgs.html
-[GetBucketReplicationArgs]: http://minio.github.io/minio-java/io/minio/GetBucketReplicationArgs.html
-[SetBucketReplicationArgs]: http://minio.github.io/minio-java/io/minio/SetBucketReplicationArgs.html
-[ReplicationConfiguration]: http://minio.github.io/minio-java/io/minio/messages/ReplicationConfiguration.html
-[VersioningConfiguration]: http://minio.github.io/minio-java/io/minio/messages/VersioningConfiguration.html
-[GetBucketVersioningArgs]: http://minio.github.io/minio-java/io/minio/GetBucketVersioningArgs.html
-[SetBucketVersioningArgs]: http://minio.github.io/minio-java/io/minio/SetBucketVersioningArgs.html
-[RestoreObjectArgs]: http://minio.github.io/minio-java/io/minio/RestoreObjectArgs.html
-[DeleteBucketCorsArgs]: http://minio.github.io/minio-java/io/minio/DeleteBucketCorsArgs.html
-[GetBucketCorsArgs]: http://minio.github.io/minio-java/io/minio/GetBucketCorsArgs.html
-[SetBucketCorsArgs]: http://minio.github.io/minio-java/io/minio/SetBucketCorsArgs.html
-[GetObjectAclArgs]: http://minio.github.io/minio-java/io/minio/GetObjectAclArgs.html
-[AccessControlPolicy]: http://minio.github.io/minio-java/io/minio/messages/AccessControlPolicy.html
-[GetObjectAttributesArgs]: http://minio.github.io/minio-java/io/minio/GetObjectAttributesArgs.html
-[GetObjectAttributesResponse]: http://minio.github.io/minio-java/io/minio/GetObjectAttributesResponse.html
-[PutObjectFanOutArgs]: http://minio.github.io/minio-java/io/minio/PutObjectFanOutArgs.html
-[PutObjectFanOutResponse]: http://minio.github.io/minio-java/io/minio/PutObjectFanOutResponse.html
-[PromptObjectArgs]: http://minio.github.io/minio-java/io/minio/PromptObjectArgs.html
-[PromptObjectResponse]: http://minio.github.io/minio-java/io/minio/PromptObjectResponse.html
+[constructor-1]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-java.lang.String-
+[constructor-2]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-java.net.URL-
+[constructor-3]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-okhttp3.HttpUrl-
+[constructor-4]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-java.lang.String-java.lang.String-java.lang.String-
+[constructor-5]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-java.lang.String-int-java.lang.String-java.lang.String-
+[constructor-6]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-java.lang.String-java.lang.String-java.lang.String-boolean-
+[constructor-7]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-java.lang.String-int-java.lang.String-java.lang.String-java.lang.String-boolean-
+[constructor-8]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-okhttp3.HttpUrl-java.lang.String-java.lang.String-
+[constructor-9]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-java.net.URL-java.lang.String-java.lang.String-
+[constructor-10]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-java.lang.String-java.lang.String-java.lang.String-java.lang.String-
+[constructor-11]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-java.lang.String-int-java.lang.String-java.lang.String-java.lang.String-boolean-
+[constructor-12]: http://hanzos3.github.io/java-sdk/io/minio/MinioClient.html#MinioClient-java.lang.String-java.lang.Integer-java.lang.String-java.lang.String-java.lang.String-java.lang.Boolean-okhttp3.OkHttpClient-
+[NotificationConfiguration]: http://hanzos3.github.io/java-sdk/io/minio/messages/NotificationConfiguration.html
+[ObjectLockConfiguration]: http://hanzos3.github.io/java-sdk/io/minio/messages/ObjectLockConfiguration.html
+[Bucket]: http://hanzos3.github.io/java-sdk/io/minio/messages/Bucket.html
+[CloseableIterator]: http://hanzos3.github.io/java-sdk/io/minio/CloseableIterator.html
+[Result]: http://hanzos3.github.io/java-sdk/io/minio/Result.html
+[NotificationRecords]: http://hanzos3.github.io/java-sdk/io/minio/messages/NotificationRecords.html
+[Upload]: http://hanzos3.github.io/java-sdk/io/minio/messages/Upload.html
+[Item]: http://hanzos3.github.io/java-sdk/io/minio/messages/Item.html
+[ComposeSource]: http://hanzos3.github.io/java-sdk/io/minio/ComposeSource.html
+[ServerSideEncryption]: http://hanzos3.github.io/java-sdk/io/minio/ServerSideEncryption.html
+[ServerSideEncryptionCustomerKey]: http://hanzos3.github.io/java-sdk/io/minio/ServerSideEncryptionCustomerKey.html
+[CopyConditions]: http://hanzos3.github.io/java-sdk/io/minio/CopyConditions.html
+[PostPolicy]: http://hanzos3.github.io/java-sdk/io/minio/PostPolicy.html
+[PutObjectOptions]: http://hanzos3.github.io/java-sdk/io/minio/PutObjectOptions.html
+[InputSerialization]: http://hanzos3.github.io/java-sdk/io/minio/messages/InputSerialization.html
+[OutputSerialization]: http://hanzos3.github.io/java-sdk/io/minio/messages/OutputSerialization.html
+[Retention]: http://hanzos3.github.io/java-sdk/io/minio/messages/Retention.html
+[StatObjectResponse]: http://hanzos3.github.io/java-sdk/io/minio/StatObjectResponse.html
+[DeleteError]: http://hanzos3.github.io/java-sdk/io/minio/messages/DeleteError.html
+[SelectResponseStream]: http://hanzos3.github.io/java-sdk/io/minio/SelectResponseStream.html
+[MakeBucketArgs]: http://hanzos3.github.io/java-sdk/io/minio/MakeBucketArgs.html
+[ListObjectsArgs]: http://hanzos3.github.io/java-sdk/io/minio/ListObjectsArgs.html
+[RemoveBucketArgs]: http://hanzos3.github.io/java-sdk/io/minio/RemoveBucketArgs.html
+[SetObjectRetentionArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetObjectRetentionArgs.html
+[GetObjectRetentionArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetObjectRetentionArgs.html
+[Method]: http://hanzos3.github.io/java-sdk/io/minio/http/Method.html
+[StatObjectArgs]: http://hanzos3.github.io/java-sdk/io/minio/StatObjectArgs.html
+[RemoveObjectArgs]: http://hanzos3.github.io/java-sdk/io/minio/RemoveObjectArgs.html
+[SseConfiguration]: http://hanzos3.github.io/java-sdk/io/minio/messages/SseConfiguration.html
+[DeleteBucketEncryptionArgs]: http://hanzos3.github.io/java-sdk/io/minio/DeleteBucketEncryptionArgs.html
+[GetBucketEncryptionArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetBucketEncryptionArgs.html
+[SetBucketEncryptionArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetBucketEncryptionArgs.html
+[Tags]: http://hanzos3.github.io/java-sdk/io/minio/messages/Tags.html
+[DeleteBucketTagsArgs]: http://hanzos3.github.io/java-sdk/io/minio/DeleteBucketTagsArgs.html
+[GetBucketTagsArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetBucketTagsArgs.html
+[SetBucketTagsArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetBucketTagsArgs.html
+[DeleteObjectTagsArgs]: http://hanzos3.github.io/java-sdk/io/minio/DeleteObjectTagsArgs.html
+[GetObjectTagsArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetObjectTagsArgs.html
+[SetObjectTagsArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetObjectTagsArgs.html
+[LifecycleConfiguration]: http://hanzos3.github.io/java-sdk/io/minio/messages/LifecycleConfiguration.html
+[DeleteBucketLifecycleArgs]: http://hanzos3.github.io/java-sdk/io/minio/DeleteBucketLifecycleArgs.html
+[GetBucketLifecycleArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetBucketLifecycleArgs.html
+[SetBucketLifecycleArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetBucketLifecycleArgs.html
+[GetBucketPolicyArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetBucketPolicyArgs.html
+[SetBucketPolicyArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetBucketPolicyArgs.html
+[DeleteBucketPolicyArgs]: http://hanzos3.github.io/java-sdk/io/minio/DeleteBucketPolicyArgs.html
+[GetObjectArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetObjectArgs.html
+[DownloadObjectArgs]: http://hanzos3.github.io/java-sdk/io/minio/DownloadObjectArgs.html
+[BucketExistsArgs]: http://hanzos3.github.io/java-sdk/io/minio/BucketExistsArgs.html
+[EnableObjectLegalHoldArgs]: http://hanzos3.github.io/java-sdk/io/minio/EnableObjectLegalHoldArgs.html
+[DisableObjectLegalHoldArgs]: http://hanzos3.github.io/java-sdk/io/minio/DisableObjectLegalHoldArgs.html
+[IsObjectLegalHoldEnabledArgs]: http://hanzos3.github.io/java-sdk/io/minio/IsObjectLegalHoldEnabledArgs.html
+[DeleteBucketNotificationArgs]: http://hanzos3.github.io/java-sdk/io/minio/DeleteBucketNotificationArgs.html
+[GetBucketNotificationArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetBucketNotificationArgs.html
+[SetBucketNotificationArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetBucketNotificationArgs.html
+[ListenBucketNotificationArgs]: http://hanzos3.github.io/java-sdk/io/minio/ListenBucketNotificationArgs.html
+[SelectObjectContentArgs]: http://hanzos3.github.io/java-sdk/io/minio/SelectObjectContentArgs.html
+[GetObjectLockConfigurationArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetObjectLockConfigurationArgs.html
+[SetObjectLockConfigurationArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetObjectLockConfigurationArgs.html
+[DeleteObjectLockConfigurationArgs]: http://hanzos3.github.io/java-sdk/io/minio/DeleteObjectLockConfigurationArgs.html
+[GetPresignedObjectUrlArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetPresignedObjectUrlArgs.html
+[RemoveObjectsArgs]: http://hanzos3.github.io/java-sdk/io/minio/RemoveObjectsArgs.html
+[CopyObjectArgs]: http://hanzos3.github.io/java-sdk/io/minio/CopyObjectArgs.html
+[PutObjectArgs]: http://hanzos3.github.io/java-sdk/io/minio/PutObjectArgs.html
+[UploadObjectArgs]: http://hanzos3.github.io/java-sdk/io/minio/UploadObjectArgs.html
+[UploadSnowballObjectsArgs]: http://hanzos3.github.io/java-sdk/io/minio/UploadSnowballObjectsArgs.html
+[ComposeObjectArgs]: http://hanzos3.github.io/java-sdk/io/minio/ComposeObjectArgs.html
+[ObjectWriteResponse]: http://hanzos3.github.io/java-sdk/io/minio/ObjectWriteResponse.html
+[ListBucketsArgs]: http://hanzos3.github.io/java-sdk/io/minio/ListBucketsArgs.html
+[DeleteBucketReplicationArgs]: http://hanzos3.github.io/java-sdk/io/minio/DeleteBucketReplicationArgs.html
+[GetBucketReplicationArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetBucketReplicationArgs.html
+[SetBucketReplicationArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetBucketReplicationArgs.html
+[ReplicationConfiguration]: http://hanzos3.github.io/java-sdk/io/minio/messages/ReplicationConfiguration.html
+[VersioningConfiguration]: http://hanzos3.github.io/java-sdk/io/minio/messages/VersioningConfiguration.html
+[GetBucketVersioningArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetBucketVersioningArgs.html
+[SetBucketVersioningArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetBucketVersioningArgs.html
+[RestoreObjectArgs]: http://hanzos3.github.io/java-sdk/io/minio/RestoreObjectArgs.html
+[DeleteBucketCorsArgs]: http://hanzos3.github.io/java-sdk/io/minio/DeleteBucketCorsArgs.html
+[GetBucketCorsArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetBucketCorsArgs.html
+[SetBucketCorsArgs]: http://hanzos3.github.io/java-sdk/io/minio/SetBucketCorsArgs.html
+[GetObjectAclArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetObjectAclArgs.html
+[AccessControlPolicy]: http://hanzos3.github.io/java-sdk/io/minio/messages/AccessControlPolicy.html
+[GetObjectAttributesArgs]: http://hanzos3.github.io/java-sdk/io/minio/GetObjectAttributesArgs.html
+[GetObjectAttributesResponse]: http://hanzos3.github.io/java-sdk/io/minio/GetObjectAttributesResponse.html
+[PutObjectFanOutArgs]: http://hanzos3.github.io/java-sdk/io/minio/PutObjectFanOutArgs.html
+[PutObjectFanOutResponse]: http://hanzos3.github.io/java-sdk/io/minio/PutObjectFanOutResponse.html
+[PromptObjectArgs]: http://hanzos3.github.io/java-sdk/io/minio/PromptObjectArgs.html
+[PromptObjectResponse]: http://hanzos3.github.io/java-sdk/io/minio/PromptObjectResponse.html
