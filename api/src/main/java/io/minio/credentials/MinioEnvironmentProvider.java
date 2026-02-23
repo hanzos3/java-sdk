@@ -21,6 +21,6 @@ public class MinioEnvironmentProvider extends EnvironmentProvider {
   @Override
   public Credentials fetch() {
     return new Credentials(
-        getProperty("MINIO_ACCESS_KEY"), getProperty("MINIO_SECRET_KEY"), null, null);
+        getProperty("S3_ACCESS_KEY"), getProperty("S3_SECRET_KEY"), null, null);
   }
 }

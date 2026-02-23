@@ -54,7 +54,7 @@ import org.junit.jupiter.api.Assertions;
     justification = "Allow catching super class Exception since it's tests")
 public class TestArgs {
   public static final String OS = System.getProperty("os.name").toLowerCase(Locale.US);
-  public static final String MINIO_BINARY = OS.contains("windows") ? "minio.exe" : "minio";
+  public static final String S3_BINARY = OS.contains("windows") ? "minio.exe" : "minio";
   public static final String PASS = "PASS";
   public static final String FAILED = "FAIL";
   public static final String IGNORED = "NA";
@@ -95,9 +95,9 @@ public class TestArgs {
         (MINT_ENV && dataDir != null && !dataDir.isEmpty())
             ? Paths.get(dataDir, "datafile-6-MB")
             : null;
-    REPLICATION_SRC_BUCKET = System.getenv("MINIO_JAVA_TEST_REPLICATION_SRC_BUCKET");
-    REPLICATION_ROLE = System.getenv("MINIO_JAVA_TEST_REPLICATION_ROLE");
-    REPLICATION_BUCKET_ARN = System.getenv("MINIO_JAVA_TEST_REPLICATION_BUCKET_ARN");
+    REPLICATION_SRC_BUCKET = System.getenv("S3_JAVA_TEST_REPLICATION_SRC_BUCKET");
+    REPLICATION_ROLE = System.getenv("S3_JAVA_TEST_REPLICATION_ROLE");
+    REPLICATION_BUCKET_ARN = System.getenv("S3_JAVA_TEST_REPLICATION_BUCKET_ARN");
   }
 
   public boolean automated;
@@ -135,10 +135,10 @@ public class TestArgs {
       this.region = "us-east-1";
       this.sqsArn = "arn:minio:sqs::miniojavatest:webhook";
     } else {
-      if ((kmsKeyName = System.getenv("MINIO_JAVA_TEST_KMS_KEY_NAME")) == null) {
+      if ((kmsKeyName = System.getenv("S3_JAVA_TEST_KMS_KEY_NAME")) == null) {
         kmsKeyName = System.getenv("MINT_KEY_ID");
       }
-      this.sqsArn = System.getenv("MINIO_JAVA_TEST_SQS_ARN");
+      this.sqsArn = System.getenv("S3_JAVA_TEST_SQS_ARN");
       this.endpoint = endpoint;
       this.accessKey = accessKey;
       this.secretKey = secretKey;
@@ -357,19 +357,19 @@ public class TestArgs {
       return false;
     }
 
-    File file = new File(MINIO_BINARY);
+    File file = new File(S3_BINARY);
     if (file.exists()) return true;
 
-    System.out.println("downloading " + MINIO_BINARY + " binary");
+    System.out.println("downloading " + S3_BINARY + " binary");
 
     Request request = new Request.Builder().url(HttpUrl.parse(url)).method("GET", null).build();
     try (Response response = newHttpClient().newCall(request).execute()) {
       if (!response.isSuccessful()) {
-        System.out.println("failed to download binary " + MINIO_BINARY);
+        System.out.println("failed to download binary " + S3_BINARY);
         return false;
       }
 
-      BufferedSink bufferedSink = Okio.buffer(Okio.sink(new File(MINIO_BINARY)));
+      BufferedSink bufferedSink = Okio.buffer(Okio.sink(new File(S3_BINARY)));
       bufferedSink.writeAll(response.body().source());
       bufferedSink.flush();
       bufferedSink.close();
@@ -381,7 +381,7 @@ public class TestArgs {
   }
 
   public static Process runMinioServer(boolean tls) throws Exception {
-    File binaryPath = new File(new File(System.getProperty("user.dir")), MINIO_BINARY);
+    File binaryPath = new File(new File(System.getProperty("user.dir")), S3_BINARY);
     ProcessBuilder pb;
     if (tls) {
       pb =
@@ -398,16 +398,16 @@ public class TestArgs {
     }
 
     Map<String, String> env = pb.environment();
-    env.put("MINIO_ROOT_USER", "minio");
-    env.put("MINIO_ROOT_PASSWORD", "minio123");
-    env.put("MINIO_CI_CD", "1");
+    env.put("S3_ROOT_USER", "minio");
+    env.put("S3_ROOT_PASSWORD", "minio123");
+    env.put("S3_CI_CD", "1");
     // echo -n abcdefghijklmnopqrstuvwxyzABCDEF | base64 -
-    env.put("MINIO_KMS_SECRET_KEY", "my-minio-key:YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXpBQkNERUY=");
-    env.put("MINIO_NOTIFY_WEBHOOK_ENABLE_miniojavatest", "on");
-    env.put("MINIO_NOTIFY_WEBHOOK_ENDPOINT_miniojavatest", "http://example.org/");
+    env.put("S3_KMS_SECRET_KEY", "my-minio-key:YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXpBQkNERUY=");
+    env.put("S3_NOTIFY_WEBHOOK_ENABLE_miniojavatest", "on");
+    env.put("S3_NOTIFY_WEBHOOK_ENDPOINT_miniojavatest", "http://example.org/");
 
     pb.redirectErrorStream(true);
-    pb.redirectOutput(ProcessBuilder.Redirect.to(new File(MINIO_BINARY + ".log")));
+    pb.redirectOutput(ProcessBuilder.Redirect.to(new File(S3_BINARY + ".log")));
 
     if (tls) {
       System.out.println("starting minio server in TLS");

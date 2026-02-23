@@ -56,14 +56,14 @@ public class MinioClientConfigProvider extends EnvironmentProvider {
   }
 
   /**
-   * Retrieve credentials in provided alias or MINIO_ALIAS or "s3" alias in configuration file from
+   * Retrieve credentials in provided alias or S3_ALIAS or "s3" alias in configuration file from
    * provided filename or AWS_SHARED_CREDENTIALS_FILE environment variable or file .aws/credentials
    * in user's home directory.
    */
   @Override
   public Credentials fetch() {
     String filename =
-        this.filename != null ? this.filename : getProperty("MINIO_SHARED_CREDENTIALS_FILE");
+        this.filename != null ? this.filename : getProperty("S3_SHARED_CREDENTIALS_FILE");
     if (filename == null) {
       filename =
           Paths.get(
@@ -76,7 +76,7 @@ public class MinioClientConfigProvider extends EnvironmentProvider {
     }
 
     String alias = this.alias;
-    if (alias == null) alias = getProperty("MINIO_ALIAS");
+    if (alias == null) alias = getProperty("S3_ALIAS");
     if (alias == null) alias = "s3";
 
     try (InputStream is = Files.newInputStream(Paths.get(filename))) {
